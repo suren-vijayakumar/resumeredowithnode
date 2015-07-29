@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $("body").append("<button id= 'clickyButton'>Click Me!</button>");
+    $("body").append("<button id= 'clickyButton'>Show Resume!</button>");
     $("body").on('click',  '#clickyButton',function(){
-        $.ajax({
-            url: "/data-request",
-            success:function(data){
-                console.log(data);
-            }
-        });
+        $("#wrapper").slideDown();
+
+    });
+    $("#wrapper").on('click',function(){
+        $(this).slideUp().hide();
+
     });
 });

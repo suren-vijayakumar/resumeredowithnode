@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* RESET */
-/* ----------------------------------------- */
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, code,
@@ -25,7 +25,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
     line-height: 1;
 }
-/* tables still need 'cellspacing="0"' in the markup */
+
 table {
     border-collapse: separate;
     border-spacing: 0;
@@ -47,13 +47,9 @@ blockquote, q {
 }
 
 
-/* LAYOUT */
-/* ----------------------------------------- */
-
 body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     background-color: #e1e0db;
-    background-image: url(../images/bg.jpg);
     background-repeat: repeat;
     font-size:14px;
     line-height: 17px;
@@ -75,8 +71,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* DOSSIER BACKGROUND */
-/* ----------------------------------------- */
 
 #wrapper {
     display:none;
@@ -90,14 +84,12 @@ a:hover {
     width:969px;
     height:19px;
     margin:0 auto;
-    background-image:url(../images/btop.jpg);
     background-repeat:no-repeat;
 }
 
 .wrapper-mid {
     width:969px;
     margin:0 auto;
-    background-image:url(../images/bmid.jpg);
     background-repeat: repeat-y;
     padding-bottom:40px;
 }
@@ -107,12 +99,9 @@ a:hover {
     height:22px;
     padding:0;
     margin:0 auto;
-    background-image:url(../images/bbottom.jpg);
     background-repeat:no-repeat;
 }
 
-/* PAPER BACKGROUND */
-/* ----------------------------------------- */
 
 #paper {
     width:828px;
@@ -122,7 +111,6 @@ a:hover {
 .paper-top {
     width:828px;
     margin:0 auto;
-    background-image:url(../images/ptop.jpg);
     background-repeat:no-repeat;
     height:126px;
 }
@@ -130,7 +118,6 @@ a:hover {
 #paper-mid {
     width:828px;
     margin:0 auto;
-    background-image:url(../images/pmid.jpg);
     background-repeat:repeat-y;
     display:block;
     padding:0;
@@ -143,12 +130,9 @@ a:hover {
     width:828px;
     height:18px;
     margin:0 auto;
-    background-image:url(../images/pbottom.jpg);
     background-repeat:no-repeat;
 }
 
-/* ENTRIES */
-/* ----------------------------------------- */
 
 .entry {
     width:720px;
@@ -389,7 +373,7 @@ ul.works li img:hover {
 img.portrait {
 
     width:200px;
-    height:160px;
+    height:200px;
     padding-top:20px;
     padding-left:11px;
     padding-right:11px;
@@ -399,9 +383,6 @@ img.portrait {
 
 }
 
-
-/* SELF INFORMATION */
-/* ----------------------------------------- */
 
 .self {
     width:350px;
@@ -415,21 +396,6 @@ img.portrait {
     padding-top: 10px;
 }
 
-.self ul li.ad {
-    background-image:url(../images/icn-ad.gif);
-}
-
-.self ul li.mail {
-    background-image:url(../images/icn-mail.gif);
-}
-
-.self ul li.tel {
-    background-image:url(../images/icn-tel.gif);
-}
-
-.self ul li.web {
-    background-image:url(../images/linkedin-3-512.gif);
-}
 
 .self ul li {
     background-repeat: no-repeat;
@@ -441,55 +407,8 @@ img.portrait {
 }
 
 
-/* TIPSY */
-/* ----------------------------------------- */
-
-.tipsy { padding: 5px; font-size: 10px; background-repeat: no-repeat;  background-image: url(../images/tipsy.gif); }
-.tipsy-inner { padding: 5px 8px 4px 8px; background-color: #1c363a; color: #fff; max-width: 200px; text-align: center; }
-.tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
-.tipsy-north { background-position: top center; }
-.tipsy-south { background-position: bottom center; margin-bottom:20px; }
-.tipsy-east { background-position: right center; }
-.tipsy-west { background-position: left center; }
 
 
-/* COLORBOX */
-/* ----------------------------------------- */
-
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
-#cboxOverlay{position:fixed; width:100%; height:100%;}
-#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
-#cboxContent{position:relative; overflow:hidden;}
-#cboxLoadedContent{overflow:auto;}
-#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
-#cboxTitle{margin:0; display:none;}
-#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
-
-#cboxOverlay{background:#666;}
-
-#colorBox{}
-#cboxTopLeft{width:25px; height:25px; background:url(../images/border1.png) 0 0 no-repeat;}
-#cboxTopCenter{height:25px; background:url(../images/border1.png) 0 -50px repeat-x;}
-#cboxTopRight{width:25px; height:25px; background:url(../images/border1.png) -25px 0 no-repeat;}
-#cboxBottomLeft{width:25px; height:25px; background:url(../images/border1.png) 0 -25px no-repeat;}
-#cboxBottomCenter{height:25px; background:url(../images/border1.png) 0 -75px repeat-x;}
-#cboxBottomRight{width:25px; height:25px; background:url(../images/border1.png) -25px -25px no-repeat;}
-#cboxMiddleLeft{width:25px; background:url(../images/border2.png) 0 0 repeat-y;}
-#cboxMiddleRight{width:25px; background:url(../images/border2.png) -25px 0 repeat-y;}
-#cboxContent{background:#fff;}
-#cboxLoadedContent{margin-bottom:20px;}
-#cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#315a60;}
-#cboxCurrent{position:absolute; bottom:0px; left:100px; color:#000;}
-#cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-#cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
-#cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-#cboxLoadingOverlay{background:url(../images/loading.gif) 5px 5px no-repeat #fff;}
-#cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
-
-
-/* GO TO TOP */
-/* ----------------------------------------- */
 
 #message {
     display: block;
@@ -516,8 +435,6 @@ img.portrait {
     color: #fff;
 }
 
-/* ELEMENTS */
-/* ----------------------------------------- */
 
 table {
     width: 500px;
